@@ -1,6 +1,6 @@
 # Angular FAQ
 
-> 后期也会对问题进行分类(初级、中级、高级)，给您带来不便深表歉意。欢迎有兴趣的朋友，一起维护哈！
+> 后期会对问题进行分类(初级、中级、高级)，给您带来不便深表歉意。欢迎有兴趣的朋友，一起维护哈！
 
 ## 目录
 
@@ -28,7 +28,7 @@
 - [Angular 开发 AppService 时，@Injectable() 是必须的么？](#angular-开发-appservice-时injectable-是必须的么)
 - [Angular 中使用 [innerHtml] 时内容被转义了要怎么办？](#angular-中使用-innerhtml-时内容被转义了要怎么办)
 
-[### Provider](#provider-1)
+### [Provider](#provider-1)
 
 - [Angular 中 forwardRef 有什么作用？](#angular-中-forwardref-有什么作用)
 - [使用字符串作为 Token 会有什么问题？](#使用字符串作为-token-会有什么问题)
@@ -37,7 +37,7 @@
 - [为什么 useClass 可以使用简洁的语法？](#为什么-useclass-可以使用简洁的语法)
 - [Angular 中 multi Provider 有什么作用？](#angular-中-multi-provider-有什么作用)
 
-[### Component](#component-1)
+### [Component](#component-1)
 
 - [Angular 中 ViewEncapsulation 模式分为哪几种？](#angular-中-viewencapsulation-模式分为哪几种)
 - [Angular 中宿主元素是什么？](#angular-中宿主元素是什么)
@@ -45,7 +45,7 @@
 - [Angular 中如何传递异步数据？](#angular-中如何传递异步数据)
 - [Angular 组件通信有哪些方式？](#angular-组件通信有哪些方式)
 
-[### Directive](#directive-1)
+### [Directive](#directive-1)
 
 - [Angular 指令分为哪几种？](#angular-指令分为哪几种)
 - [Angular 中指令与组件之间有什么联系？](#angular-中指令与组件之间有什么联系)
@@ -55,7 +55,7 @@
 - [注册指令生命周期钩子时，一定要实现对应的接口么?](#注册指令生命周期钩子时一定要实现对应的接口么)
 - [为什么在构造函数中是获取不到输入属性的值？](#为什么在构造函数中是获取不到输入属性的值)
 
-[### Decorator](#decorator-1)
+### [Decorator](#decorator-1)
 
 - [装饰器是什么？](#装饰器是什么)
 - [装饰器有几种分类？](#装饰器有几种分类)
@@ -71,7 +71,7 @@
 - [@HostListener 与 @HostBinding 有什么用？](#hostlistener-与-hostbinding-有什么用)
 - [为什么在 Root Component 中无法使用 `ng-content`？](#为什么在-root-component-中无法使用-ng-content)
 
-[### Form](#form-1)
+### [Form](#form-1)
 
 - [模板驱动与模型驱动表单各有什么特点？](#模板驱动与模型驱动表单各有什么特点)
 - [Angular 中如何使用模板驱动表单？](#angular-中如何使用模板驱动表单)
@@ -85,12 +85,12 @@
 - [Angular 中如何自定义验证指令？](#angular-中如何自定义验证指令)
 - [Angular 中如何自定义表单控件？](#angular-中如何自定义表单控件)
 
-[### ChangeDetection](#changedetection-1)
+### [ChangeDetection](#changedetection-1)
 
 - [ChangeDetectionStrategy 变化检测策略总共有几种？](#changedetectionstrategy-变化检测策略总共有几种)
 - [变化检测器的状态有哪几种？](#变化检测器的状态有哪几种)
 
-[### Pipe](#pipe-1)
+### [Pipe](#pipe-1)
 
 - [Angular 内置管道有哪一些？](#angular-内置管道有哪一些)
 - [Angular 中管道分为哪几类？](#angular-中管道分为哪几类)
