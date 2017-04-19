@@ -1,114 +1,100 @@
 # Angular FAQ
 
-> 目录链接会尽快补上，后期也会对问题进行分类(初级、中级、高级)，给您带来不便深表歉意。欢迎有兴趣的朋友，一起维护哈！
+> 后期也会对问题进行分类(初级、中级、高级)，给您带来不便深表歉意。欢迎有兴趣的朋友，一起维护哈！
 
 ## 目录
 
-### TypeScript
+### [TypeScript](#typescript)
 
-- 面向对象编程中类的概念是什么？
-- 面向对象编程中继承的概念是什么？
-- 为什么 ES6 或 TypeScript 中的 Class 不会自动提升？
-- TypeScrip 中类静态属性和成员属性有什么区别？
+- [面向对象编程中类的概念是什么？](#面向对象编程中类的概念是什么)
+- [面向对象编程中继承的概念是什么？](#面向对象编程中继承的概念是什么)
+- [为什么 ES6 或 TypeScript 中的 Class 不会自动提升？](#为什么-es6-或-typescript-中的-class-不会自动提升)
+- [TypeScrip 中类静态属性和成员属性有什么区别？](#typescrip-中类静态属性和成员属性有什么区别)
 
-### RxJS
+### [RxJS](#rxjs-1)
 
-- Pull 模式 与 Push 模式有什么区别？
+- [Pull 模式 与 Push 模式有什么区别？](#pull-模式-与-push-模式有什么区别)
+- [Observable 与 Promise 有什么区别？](#observable-与-promise-有什么区别)
+- [RxJS 中 Subject 有什么特点？](#rxjs-中-subject-有什么特点)
+- [RxJS 中 BehaviorSubject、ReplaySubject、AsyncSubject 各有什么作用？](#rxjs-中-behaviorsubjectreplaysubjectasyncsubject-各有什么作用)
 
+### [Common](#common-1)
 
-- Observable 与 Promise 有什么区别？
-- RxJS 中 Subject 有什么特点？
-- RxJS 中 BehaviorSubject、ReplaySubject、AsyncSubject 各有什么作用？
+- [Angular 1.x 与 Angular 4.x 区别大么？](#angular-1x-与-angular-4x-区别大么)
+- [Angular 2.x 与 Angular 4.x 区别大么？](#angular-2x-与-angular-4x-区别大么)
+- [AngularJS 1.x DI 系统有什么问题？](#angularjs-1x-di-系统有什么问题)
+- [constructor 与 ngOnInit 的应用场景是什么？](#constructor-与-ngoninit-的应用场景是什么)
+- [ElementRef 有什么作用？](#elementref-有什么作用)
+- [Angular 开发 AppService 时，@Injectable() 是必须的么？](#angular-开发-appservice-时injectable-是必须的么)
+- [Angular 中使用 [innerHtml] 时内容被转义了要怎么办？](#angular-中使用-innerhtml-时内容被转义了要怎么办)
 
-### Common
+[### Provider](#provider-1)
 
-- Angular 1.x 与 Angular 4.x 区别大么？
-- Angular 2.x 与 Angular 4.x 区别大么？
-- AngularJS 1.x DI 系统有什么问题？
+- [Angular 中 forwardRef 有什么作用？](#angular-中-forwardref-有什么作用)
+- [使用字符串作为 Token 会有什么问题？](#使用字符串作为-token-会有什么问题)
+- [Angular 中 Provider 的作用是什么？](#angular-中-provider-的作用是什么)
+- [Angular 中配置 Provider 有哪几种方式？](#angular-中配置-provider-有哪几种方式)
+- [为什么 useClass 可以使用简洁的语法？](#为什么-useclass-可以使用简洁的语法)
+- [Angular 中 multi Provider 有什么作用？](#angular-中-multi-provider-有什么作用)
 
+[### Component](#component-1)
 
-- constructor 与 ngOnInit 的应用场景是什么？
-- ElementRef 有什么作用？
-- Angular 开发 AppService 时，@Injectable() 是必须的么？
-- Angular 中使用 [innerHtml] 时内容被转义了要怎么办？
+- [Angular 中 ViewEncapsulation 模式分为哪几种？](#angular-中-viewencapsulation-模式分为哪几种)
+- [Angular 中宿主元素是什么？](#angular-中宿主元素是什么)
+- [Angular 中组件如何实现继承？](#angular-中组件如何实现继承)
+- [Angular 中如何传递异步数据？](#angular-中如何传递异步数据)
+- [Angular 组件通信有哪些方式？](#angular-组件通信有哪些方式)
 
-### Provider
+[### Directive](#directive-1)
 
-- Angular 中 forwardRef 有什么作用？
-- 使用字符串作为 Token 会有什么问题？
-- Angular 中 Provider 的作用是什么？
-- Angular 中配置 Provider 有哪几种方式？
-- 为什么 useClass 可以使用简洁的语法？
-- Angular 中 multi Provider 有什么作用？
+- [Angular 指令分为哪几种？](#angular-指令分为哪几种)
+- [Angular 中指令与组件之间有什么联系？](#angular-中指令与组件之间有什么联系)
+- [使用 `[hidden]` 属性控制元素可见性有什么问题？](#使用-hidden-属性控制元素可见性有什么问题)
+- [自定义属性指令中的 `ElementRef` 与 `Renderer` 有什么作用？](#自定义属性指令中的-elementref-与-renderer-有什么作用)
+- [自定义结构指令中的 `TemplateRef` 与 `ViewContainerRef` 有什么作用？](#自定义结构指令中的-templateref-与-viewcontainerref-有什么作用)
+- [注册指令生命周期钩子时，一定要实现对应的接口么?](#注册指令生命周期钩子时一定要实现对应的接口么)
+- [为什么在构造函数中是获取不到输入属性的值？](#为什么在构造函数中是获取不到输入属性的值)
 
-### Component
+[### Decorator](#decorator-1)
 
-- Angular 中 ViewEncapsulation 模式分为哪几种？
+- [装饰器是什么？](#装饰器是什么)
+- [装饰器有几种分类？](#装饰器有几种分类)
+- [@Component 中 `@` 的有什么作用？](#component-中--的有什么作用)
+- [为什么在构造函数中，非 Type 类型的参数只能用 @Inject(Something) 的方式注入？](#为什么在构造函数中非-type-类型的参数只能用-injectsomething-的方式注入-)
+- [@Input 装饰器的作用是什么？](#input-装饰器的作用是什么)
+- [@Output 装饰器的作用是什么?](#output-装饰器的作用是什么)
+- [@Input 与 inputs 有什么区别？](#input-与-inputs-有什么区别)
+- [使用@Input 与 @Output 有什么注意事项？](#使用input-与-output-有什么注意事项)
+- [@ViewChild 与 @ViewChildren 装饰器的作用是什么？](#viewchild-与-viewchildren-装饰器的作用是什么)
+- [@ContentChild 与 @ContentChildren 装饰器的作用是什么？](#contentchild-与-contentchildren-装饰器的作用是什么)
+- [@ViewChild 与 @ContentChild 有什么区别？](#viewchild-与-contentchild-有什么区别)
+- [@HostListener 与 @HostBinding 有什么用？](#hostlistener-与-hostbinding-有什么用)
+- [为什么在 Root Component 中无法使用 `ng-content`？](#为什么在-root-component-中无法使用-ng-content)
 
+[### Form](#form-1)
 
-- Angular 中宿主元素是什么？
-- Angular 中组件如何实现继承？
-- Angular 中如何传递异步数据？
-- Angular 组件通信有哪些方式？
+- [模板驱动与模型驱动表单各有什么特点？](#模板驱动与模型驱动表单各有什么特点)
+- [Angular 中如何使用模板驱动表单？](#angular-中如何使用模板驱动表单)
+- [Angular 中如何使用模型驱动表单？](#angular-中如何使用模型驱动表单)
+- [form 表单上的 `novalidate` 属性作用是什么？](#form-表单上的-novalidate-属性作用是什么)
+- [表单控件的状态除了 `touched` 外，还包含其它几种状态？](#表单控件的状态除了-touched-外还包含其它几种状态)
+- [表单控件上 `#userName` 和 `#userName="ngModel"` 这两种方式有什么区别？](#表单控件上-username-和-usernamengmodel-这两种方式有什么区别)
+- [ngModelGroup 有什么作用？](#ngmodelgroup-有什么作用)
+- [Angular 表单中 patchValue 与 setValue 方法有什么区别？](#angular-表单中-patchvalue-与-setvalue-方法有什么区别)
+- [Angular 中内置验证器有哪一些？](#angular-中内置验证器有哪一些)
+- [Angular 中如何自定义验证指令？](#angular-中如何自定义验证指令)
+- [Angular 中如何自定义表单控件？](#angular-中如何自定义表单控件)
 
-### Directive
+[### ChangeDetection](#changedetection-1)
 
-- Angular 指令分为哪几种？
-- Angular 中指令与组件之间有什么联系？
+- [ChangeDetectionStrategy 变化检测策略总共有几种？](#changedetectionstrategy-变化检测策略总共有几种)
+- [变化检测器的状态有哪几种？](#变化检测器的状态有哪几种)
 
+[### Pipe](#pipe-1)
 
-- 使用 `[hidden]` 属性控制元素可见性有什么问题？
-- 自定义属性指令中的 `ElementRef` 与 `Renderer` 有什么作用？
-- 自定义结构指令中的 `TemplateRef` 与 `ViewContainerRef` 有什么作用？
-- 注册指令生命周期钩子时，一定要实现对应的接口么?
-- 为什么在构造函数中是获取不到输入属性的值？
-
-### Decorator
-
-- 装饰器是什么？
-- 装饰器有几种分类？
-
-
-- @Component 中 `@` 的有什么作用？
-- 为什么在构造函数中，非 Type 类型的参数只能用 @Inject(Something) 的方式注入？
-- @Input 装饰器的作用是什么？
-- @Output 装饰器的作用是什么?
-- @Input 与 inputs 有什么区别？
-- 使用@Input 与 @Output 有什么注意事项？
-- @ViewChild 与 @ViewChildren 装饰器的作用是什么？
-- @ContentChild 与 @ContentChildren 装饰器的作用是什么？
-- @ViewChild 与 @ContentChild 有什么区别？
-- @HostListener 与 @HostBinding 有什么用？
-- 为什么在 Root Component 中无法使用 `ng-content`？
-
-### Form
-
-- 模板驱动与模型驱动表单各有什么特点？
-- Angular 中如何使用模板驱动表单？
-- Angular 中如何使用模型驱动表单？
-
-
-- form 表单上的 `novalidate` 属性作用是什么？
-- 表单控件的状态除了 `touched` 外，还包含其它几种状态？
-- 表单控件上 `#userName` 和 `#userName="ngModel"` 这两种方式有什么区别？
-- ngModelGroup 有什么作用？
-- Angular 表单中 patchValue 与 setValue 方法有什么区别？
-- Angular 中内置验证器有哪一些？
-- Angular 中如何自定义验证指令？
-- Angular 中如何自定义表单控件？
-
-### ChangeDetection
-
-- ChangeDetectionStrategy 变化检测策略总共有几种？
-- 变化检测器的状态有哪几种？
-
-### Pipe
-
-- Angular 内置管道有哪一些？
-
-
-- Angular 中管道分为哪几类？
-- Angular 中怎么定义一个管道？
+- [Angular 内置管道有哪一些？](#angular-内置管道有哪一些)
+- [Angular 中管道分为哪几类？](#angular-中管道分为哪几类)
+- [Angular 中怎么定义一个管道？](#angular-中怎么定义一个管道)
 
 ## TypeScript
 
