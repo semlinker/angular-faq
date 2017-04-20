@@ -8,6 +8,9 @@
 
 - [面向对象编程中类的概念是什么？](#面向对象编程中类的概念是什么)
 - [面向对象编程中继承的概念是什么？](#面向对象编程中继承的概念是什么)
+- [什么是接口？](#什么是接口)
+- [什么是泛型？](#什么是泛型)
+- [什么是枚举？](#什么是枚举)
 - [为什么 ES6 或 TypeScript 中的 Class 不会自动提升？](#为什么-es6-或-typescript-中的-class-不会自动提升)
 - [TypeScrip 中类静态属性和成员属性有什么区别？](#typescrip-中类静态属性和成员属性有什么区别)
 
@@ -95,6 +98,14 @@
 - [Angular 内置管道有哪一些？](#angular-内置管道有哪一些)
 - [Angular 中管道分为哪几类？](#angular-中管道分为哪几类)
 - [Angular 中怎么定义一个管道？](#angular-中怎么定义一个管道)
+
+### Resources
+
+- [Frameworks](#frameworks)
+- [Blogs](#blogs)
+- [Tools](#tools)
+- [Platforms](#platforms)
+
 
 ## TypeScript
 
@@ -1044,3 +1055,38 @@ RepeatPipe 使用
 ```
 
 详细的内容可以参考 - [Angular 2 Pipe](https://segmentfault.com/a/1190000008646187)
+
+## Resources
+
+### Frameworks
+
+- [Angular Material 2](https://github.com/angular/material2)
+- [Kendo-UI](http://www.telerik.com/kendo-angular-ui/components/)
+- [ng2-bootstrap](http://valor-software.com/ng2-bootstrap/#/)
+- [primeng](https://github.com/primefaces/primeng)
+- [ngSemantic](https://ng-semantic.herokuapp.com/#/)
+- [ng-lightning](http://ng-lightning.github.io/ng-lightning/#/components)
+- [Onsen UI](https://onsen.io/v2/docs/guide/angular2/)
+
+### Blogs
+
+- [thoughtram](https://blog.thoughtram.io/all/)
+- [toddmotto](https://toddmotto.com/)
+- [nrwl](https://blog.nrwl.io/)
+- [angular-university](http://blog.angular-university.io/)
+- [scotch](https://scotch.io/tag/angular-js)
+- [medium](https://medium.com/tag/angular2)
+
+### Tools
+
+- [Augury(调试工具)](https://augury.angular.io/)
+- [Codelyzer(代码分析)](https://github.com/mgechev/codelyzer)
+- [Lite-Server(轻量Node服务器)](https://github.com/johnpapa/lite-server)
+
+### Platforms
+
+- [angular-electron(桌面版)](https://github.com/angular/angular-electron)
+- [ionic(mobile app)](http://ionicframework.com/)
+- [nativescript-angular](https://github.com/NativeScript/nativescript-angular)
+- [angular 2 and react native](http://angular.github.io/react-native-renderer/)
+- [universal-windows-app](https://github.com/preboot/angular2-universal-windows-app)
