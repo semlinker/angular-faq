@@ -132,6 +132,131 @@
 
 ![](https://segmentfault.com//img/bVLPun?w=293&h=204)
 
+### 什么是接口
+
+在面向对象语言中，接口（Interfaces）是一个很重要的概念，它是对行为的抽象，而具体如何行动需要由类（classes）去实现（implements）。
+
+TypeScript 中的接口是一个非常灵活的概念，除了可用于[对类的一部分行为进行抽象](https://ts.xcatliu.com/advanced/class-and-interfaces.html#类实现接口)以外，也常用于对「对象的形状（Shape）」进行描述。
+
+#### 对象的形状
+
+```typescript
+interface Person {
+  name: string;
+  age: number;
+}
+
+let semlinker: Person = {
+  name: 'semlinker',
+  age: **
+};
+```
+
+#### 可选|只读属性
+
+```typescript
+interface Person {
+  readonly name: string;
+  age?: number;
+}
+```
+
+#### 函数类型
+
+接口能够描述 JavaScript 中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述函数类型。
+
+```typescript
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  let result = source.search(subString);
+  return result > -1;
+}
+```
+
+详细的内容可以参考 - [typescript-handbook-interface](https://zhongsp.gitbooks.io/typescript-handbook/content/doc/handbook/Interfaces.html)
+
+### 什么是泛型？
+
+泛型（Generics）是允许同一个函数接受不同类型参数的一种模板。相比于使用 any 类型，使用泛型来创建可复用的组件要更好，因为泛型会保留参数类型。
+
+#### 泛型接口
+
+```typescript
+interface GenericIdentityFn<T> {
+    (arg: T): T;
+}
+```
+
+#### 泛型类
+
+```typescript
+class GenericNumber<T> {
+    zeroValue: T;
+    add: (x: T, y: T) => T;
+}
+
+let myGenericNumber = new GenericNumber<number>();
+myGenericNumber.zeroValue = 0;
+myGenericNumber.add = function(x, y) { return x + y; };
+```
+
+#### 实际应用
+
+```typescript
+// Hero接口定义
+interface Hero {
+    id: number;
+    name: string;
+}
+
+getHeroes(): Observable<Hero[]> {
+  return Observable.of([
+     { id: 1, name: 'Windstorm' },
+     { id: 13, name: 'Bombasto' },
+     { id: 15, name: 'Magneta' },
+     { id: 20, name: 'Tornado' }
+  ]);
+}
+```
+
+上面 `getHeroes(): Observable<Hero[]>` 表示调用 `getHeroes()` 方法后返回的是一个 Observable 对象，`<Hero[]>` 用于表示该 Observable 对象的观察者，将会收到的数据类型。示例中表示将会返回 `<Hero[]>` 英雄列表。
+
+### 什么是枚举？
+
+枚举用来定义一些有名字的数字常量。枚举通过 `enum` 关键字来定义。
+
+```typescript
+// angular2/packages/http/src/enums.ts 片段
+export enum RequestMethod {
+  Get, // 0
+  Post, // 1
+  Put, // 2
+  Delete, // 3
+  Options, // 4
+  Head, // 5
+  Patch // 6
+}
+```
+
+编译后的 ES 5 代码
+
+```typescript
+var RequestMethod;
+(function (RequestMethod) {
+        RequestMethod[RequestMethod["Get"] = 0] = "Get";
+        RequestMethod[RequestMethod["Post"] = 1] = "Post";
+        RequestMethod[RequestMethod["Put"] = 2] = "Put";
+        RequestMethod[RequestMethod["Delete"] = 3] = "Delete";
+        RequestMethod[RequestMethod["Options"] = 4] = "Options";
+        RequestMethod[RequestMethod["Head"] = 5] = "Head";
+        RequestMethod[RequestMethod["Patch"] = 6] = "Patch";
+})(RequestMethod = exports.RequestMethod || (exports.RequestMethod = {}));
+```
+
 ### 为什么 ES6 或 TypeScript 中的 Class 不会自动提升？
 
 因为当 class 使用 extends 关键字实现继承的时候，我们不能确保所继承父类是有效的，那么就可能导致一些无法预知的行为。详细的内容可以参考 - [Angular 2 Forward Reference](https://segmentfault.com/a/1190000008626276) 这篇文章。
