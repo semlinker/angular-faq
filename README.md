@@ -1,6 +1,6 @@
 # Angular FAQ
 
-> 后期会对问题进行分类(初级、中级、高级)，给您带来不便深表歉意。欢迎有兴趣的朋友，一起维护哈！
+> 查看新版教程，请访问[前端修仙之路](https://semlinker.com/)
 
 ## 目录
 
@@ -1486,7 +1486,9 @@ RepeatPipe 使用
 - [nrwl](https://blog.nrwl.io/)
 - [angular-university](http://blog.angular-university.io/)
 - [scotch](https://scotch.io/tag/angular-js)
-- [medium](https://medium.com/tag/angular2)
+- [alligator](https://alligator.io/angular/)
+- [angularindepth](https://blog.angularindepth.com/)
+- [前端修仙之路](https://semlinker.com/)
 
 ### Tools
 
